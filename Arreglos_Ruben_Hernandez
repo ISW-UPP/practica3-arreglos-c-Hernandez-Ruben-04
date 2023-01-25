@@ -1,0 +1,80 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    // Programa que pida 10 números y los muestre en orden inverso al que fueron agregados.
+    int arreglo[9];
+        cout << "Ingresa 10 numeros";
+    for (int i = 0;  i<= 9; i++)
+        cin >> arreglo[i];
+    for (int i = 0; i >= 9; i++)
+        cout << arreglo[i];
+    cout << "\n";
+    for (int i = 9; i >= 0; i--)
+        cout << arreglo[i];
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    {
+        int i, suma = 0, media;
+        // Programa que pida 10 números, calcule su media y luego muestre los que están por encima de la media.
+        int arreglo[9];
+        cout << "Introduce 10 numeros: ";
+        for (i = 0; i < 9; i++)
+        {
+            cout << "Introduce el " << i + 1 << " digito: ";
+            cin >> arreglo[i];
+        }
+
+        for (i = 0; i < 9; i++)
+        {
+            suma += arreglo[i];
+        }
+
+        media = suma / 10;
+
+        cout << "La media es: " << media;
+
+        cout << "Los numeros mayores de la media son: ";
+        for (i = 0; i < 9; i++)
+        {
+
+            if (arreglo[i] > media)
+
+            {
+                cout << arreglo[i];
+            }
+        }
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main ()
+{
+    
+        int i; 
+        int mayor = 0;
+    // Programa que pida 10 números, para que calcule cuál es el mayor de ellos.
+    int arreglo[9];
+    cout << "Ingresa 10 numeros";
+    for (i = 0; i < 9; i++)
+    {
+        cout << "Ingrese el " << i + 1 << " digito: ";
+        cin >> arreglo[9];
+    }
+        //Sacar el numero mayor:
+        if (arreglo[9] > mayor);
+        {
+            mayor = arreglo[9];
+        }
+
+    cout << "El mayor elemento del vector es: " << mayor;
+}
